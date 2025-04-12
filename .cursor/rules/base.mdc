@@ -8,7 +8,7 @@ alwaysApply: true
 
 ## git Repository
 
-- All commit message should follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard.
+- All commit message should follow the [Conventional Commits](mdc:https:/www.conventionalcommits.org/en/v1.0.0) standard.
 
 ## Doc comments
 
