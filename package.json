@@ -1,6 +1,6 @@
 {
   "name": "@iktakahiro/frontapp-mcp-server",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "description": "Front API client with Model Context Protocol support",
   "main": "src/index.ts",
   "type": "module",
