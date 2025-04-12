@@ -1,0 +1,20 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Base Rules
+
+## git Repository
+
+- All commit message should follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard.
+
+## Doc comments
+
+- All doc comments should follow the [TSDoc](mdc:https:/tsdoc.org) standard.
+- All documentations and code comments must be written in English.
+
+## Tests
+
+- Use vitest package

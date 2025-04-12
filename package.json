@@ -1,0 +1,37 @@
+{
+  "name": "@iktakahiro/frontapp-mcp-server",
+  "version": "0.9.5",
+  "description": "Front API client with Model Context Protocol support",
+  "main": "src/index.ts",
+  "type": "module",
+  "bin": {
+    "frontapp-mcp-server": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "test": "vitest",
+    "check": "biome check --write .",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "files": ["build"],
+  "keywords": ["mcp", "mcp-server", "front", "frontapp"],
+  "author": "iktakahiro <takahiro.ikeuchi@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iktakahiro/frontapp-mcp-server"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "@types/node": "^22.14.1",
+    "node-fetch": "^3.3.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  }
+}
