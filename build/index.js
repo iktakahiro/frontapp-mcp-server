@@ -95,5 +95,15 @@ server.tool('getConversations', 'Get conversations from a Front inbox', {
         throw new Error(`Front API error: ${error instanceof Error ? error.message : String(error)}`);
     }
 });
-const transport = new StdioServerTransport();
-await server.connect(transport);
+/**
+ * Start the server using stdio transport.
+ * This allows the server to communicate via standard input/output streams.
+ */
+async function main() {
+    const transport = new StdioServerTransport();
+    await server.connect(transport);
+}
+main().catch(error => {
+    console.error('Server error:', error);
+    process.exit(1);
+});
